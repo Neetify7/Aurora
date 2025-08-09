@@ -4,13 +4,23 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans';
-    color: #ffffff;
 }
 
 body {
     background-color: #000000;
-    color: #ffffff;
     user-select: none;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
 }
 
 body::before {
@@ -21,7 +31,7 @@ body::before {
     background-image: url('/img/aurora.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.05;
+    opacity: 0.1;
     pointer-events: none;
 }
 
@@ -43,8 +53,54 @@ body::before {
     font-size: 20px;
     border-radius: 25px;
     transition: all ease 0.1s;
+    color: #ffffff;
 }
 
 .btn:hover {
+    background-color: #050505;
+}
+
+#gseResults {
+  position: absolute !important;
+  left: -9999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+#Search {
+    margin-top: 20px;
+}
+
+#input {
+    background-color: #101010;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: all ease 0.1s;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#input:hover {
+    background-color: #050505;
+}
+
+#search {
+    background-color: #101010;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: all ease 0.1s;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#search:hover {
     background-color: #050505;
 }

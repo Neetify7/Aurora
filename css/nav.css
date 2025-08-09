@@ -1,11 +1,13 @@
 nav {
-    border-bottom: 1px solid #050505;
+    border-bottom: 1px solid #101010;
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    backdrop-filter: blur(10px);
 }
 
 nav li {
@@ -21,6 +23,7 @@ nav a {
     text-align: center;
     display: inline-block;
     width: 100px;
+    color: #ffffff;
 }
 
 nav a:hover {

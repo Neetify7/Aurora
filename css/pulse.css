@@ -15,6 +15,6 @@ body::before {
         opacity: 0;
     }
     50% {
-        opacity: 0.05;
+        opacity: 0.1;
     }
 }

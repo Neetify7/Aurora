@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <script src="/js/gse.js"></script>
     <title>Aurora</title>
     <style>
         .center {
@@ -24,13 +23,25 @@
         </ul>
     </nav>
     <div class="center">
-        <h1 style="font-size: 65px;">Aurora</h1>
-        <script async src="https://cse.google.com/cse.js?cx=f1b512f68ea7442a4"></script>
-        <form id="Search" onsubmit="return searchGSE()">
-            <input type="text" id="input" placeholder="Search Google"/>
-            <button type="submit" id="search">Search</button>
-        </form>
+        <h1 style="font-size: 65px; margin-bottom: 20px;">YT</h1>
+         <div style="display: flex; gap: 20px;">
+            <button onClick="w();" style="cursor: pointer" class="btn">WATCH</button>
+            <button onClick="d();" style="cursor: pointer" class="btn">DOWN</button>
+            <button onClick="s();" style="cursor: pointer" class="btn">SEARCH</button>
+        </div>
     </div>
-    <div id="gseResults"></div>
+    <script>
+        function w() {
+            window.location.href="/yt/w"
+        }
+
+        function d() {
+            window.location.href="/yt/d"
+        }
+
+        function s() {
+            window.location.href="/yt/s"
+        }
+    </script>
 </body>
 </html>

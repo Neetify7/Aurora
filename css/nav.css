@@ -1,0 +1,28 @@
+nav {
+    border-bottom: 1px solid #050505;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 20px 25px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+}
+
+nav a:hover {
+    background-color: #101010;
+}

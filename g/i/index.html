@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="10;url=https://google.com"> !-->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pulse.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <script src="/js/widget.js" defer></script>
+    <title>Aurora</title>
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="time"></div>
+        <ul>
+            <li><a href="/h">HOME</a></li>
+            <li><a href="/g">GAME</a></li>
+            <li><a href="/yt">YT</a></li>
+            <li><a href="/g/i/?game=/e4.2.3">EMULATOR</a></li>
+        </ul>
+        <div id="battery"></div>
+    </nav>
+    <iframe src="" style="height: calc(100vh - 90px); width:100%; border: none;"></iframe>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const gameUrl = params.get('game');
+
+        if (gameUrl) {
+            const iframe = document.querySelector('iframe');
+            iframe.src = gameUrl;
+        }
+    </script>
+</body>
+</html>
